@@ -5,7 +5,7 @@ from os.path import isfile, join
 
 face0 =cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-data_path = './datacollection/'
+data_path = './data_collection/'
 
 onlyfiles = [f for f in listdir(data_path) if isfile(join(data_path,f))]
 
@@ -53,15 +53,15 @@ while True:
         if result[1] < 500:
             confidence = int(100*(1-(result[1])/300))
             display_string = str(confidence)+'% Confidence it is user'
-        # cv2.putText(image,display_string,(100,120), cv2.FONT_HERSHEY_COMPLEX,1,(250,120,255),2)
+        cv2.putText(image,display_string,(100,120), cv2.FONT_HERSHEY_COMPLEX,1,(250,120,255),2)
 
-        if confidence > 75:
+        if confidence > 80:
             cv2.putText(image, "Unlocked", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)
             cv2.imshow('Face Cropper', image)
 
         else:
             cv2.putText(image, "Locked", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
-            # display_string = str(confidence) + '% Confidence it is not user'
+             display_string = str(confidence) + '% Confidence it is not user'
             cv2.imshow('Face Cropper', image)
     except:
         cv2.putText(image, "Face Not Found", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 0, 0), 2)

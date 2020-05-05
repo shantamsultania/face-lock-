@@ -1,6 +1,6 @@
 # face-lock-
 
-This project is a facial lock system for the user in this first user creates an data set of his face and then using that we create an lock system that is able to identify the user 
+This project is a facial lock system for the user in this first user creates a data set of his face and then using that we create a lock system that is able to identify the user 
 
 Hello All my name is Shantam And these are the Source for a facial Lock system using Python and OpenCV
 
@@ -45,7 +45,7 @@ run pip install opencv-contrib-python if you need both main and contrib modules
 
 (check extra modules listing from OpenCV documentation at https://docs.opencv.org/master/ )
 
-You can also refer to this video link on how to insatll opencv in below given IDE's
+You can also refer to this video link on how to install OpenCV in below given IDE's
 
 For Pycharm
 https://www.youtube.com/watch?v=ppnFp_RiE0A
@@ -58,13 +58,13 @@ https://www.youtube.com/watch?v=T2ykss_4Af0
 
 #### Steps involved
 
-1) Download the code .
+1) Download the code.
 
-2) Download Python and OpenCV for reference please See the above code.
+2) Download Python and OpenCV for reference please see the above code.
 
 3) Download An IDE for the same for reference please see the above code.
 
-4) Run porgram facelock1.py to create the dataset of your faces.
+4) Run program facelock1.py to create the dataset of your faces.
 
 5) Run program facelock2.py to train the model and see the output.
 

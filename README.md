@@ -1,6 +1,6 @@
 # face-lock-
 
-This project is a facial lock system for the user in this first user creates a data set of his face and then using that we create a lock system that is able to identify the user 
+This project is a facial lock system for the user in this first user creates a data set of his face and then using that we create a lock system that can identify the user 
 
 Hello All my name is Shantam And these are the Source for a facial Lock system using Python and OpenCV
 

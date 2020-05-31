@@ -5,7 +5,7 @@ from os.path import isfile, join
 
 face0 =cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-data_path = './data_collection/'
+data_path = './datacollection/'
 
 onlyfiles = [f for f in listdir(data_path) if isfile(join(data_path,f))]
 

@@ -2,6 +2,8 @@ import cv2
 import os
 import numpy
 
+alkdalkalda
+
 face =cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 try:
     if not os.path.exists('datacollection'):
